@@ -13,6 +13,7 @@
     <title>Bad words Censored</title>
 </head>
 <body>
+    <h1><?php strlen($sentence);?></h1>
     <h1><?php echo str_replace($censor,"***",$sentence); ?></h1>
 </body>
 </html>
