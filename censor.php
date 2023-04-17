@@ -1,6 +1,8 @@
 <?php
     $sentence = $_GET['mySentence'];
-    $censor = $_GET['myCensor']
+    $censor = $_GET['myCensor'];
+    $censorSentence = str_replace($censor,"***",$sentence);
+    $lenghtText = $sentence.var_export(strlen($sentence));
     ?>
 
 
@@ -13,7 +15,7 @@
     <title>Bad words Censored</title>
 </head>
 <body>
-    <h1><?php strlen($sentence);?></h1>
-    <h1><?php echo str_replace($censor,"***",$sentence); ?></h1>
+    <h1><?php echo 'é la lunghezza del testo '.''.$sentence.var_export(strlen($sentence));?></h1>
+    <h1><?php echo 'é la lunghezza del testo '.$censorSentence .var_export(strlen($censorSentence));  ?></h1>
 </body>
 </html>
