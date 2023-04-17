@@ -14,7 +14,7 @@
     <title>Bad words Censored</title>
 </head>
 <body>
-    <h1><?php echo ' é la lunghezza del testo '.''.$sentence.var_export(strlen($sentence));?></h1>
-    <h1><?php echo ' é la lunghezza del testo '.$censorSentence .var_export(strlen($censorSentence));  ?></h1>
+    <h1><?php echo ' caratteri é la lunghezza del testo '.''.$sentence.var_export(strlen($sentence));?></h1>
+    <h1><?php echo ' caratteri é la lunghezza del testo '.$censorSentence .var_export(strlen($censorSentence));  ?></h1>
 </body>
 </html>
